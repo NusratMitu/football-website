@@ -117,7 +117,7 @@ main {
   font-size: 16px;
   color: #6c6c6c;
 }
-.highlight-banner img {
+.highlight-banner iframe {
   width: 567px;
   height: 427px;
 }
@@ -262,7 +262,7 @@ small {
     width: 329px;
     margin-right: 0%;
   }
-  .highlight-banner img {
+  .highlight-banner iframe {
     width: 328px;
     height: 248px;
   }
@@ -316,7 +316,7 @@ small {
     margin-right: 0%;
     width: 50%;
   }
-  .highlight-banner img {
+  .highlight-banner iframe {
     width: 80%;
     height: 80%;
   }
