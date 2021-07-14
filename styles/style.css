@@ -73,7 +73,7 @@ main {
 }
 .player {
   width: 300px;
-  height: 474px;
+  height: 434px;
   padding: 15px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
@@ -120,6 +120,62 @@ main {
 .highlight-banner img {
   width: 567px;
   height: 427px;
+}
+/*-----------------------------
+ games and features styles
+ ------------------------------ */
+.feature-title {
+  font-size: 48px;
+  text-align: center;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.feature {
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-photo img {
+  width: 350px;
+  height: 300px;
+}
+
+.feature-details {
+  display: none;
+  position: absolute;
+  top: 0%;
+  height: 100%;
+}
+
+.feature-details h4 {
+  color: #78a5e9;
+  text-align: center;
+}
+
+.feature-details p {
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.feature:hover .feature-details {
+  display: block;
+  background-color: rgba(83, 82, 87, 0.637);
+}
+
+.feature:hover .feature-photo {
+  transform: scale(1.2);
+  transition: transform 1s ease-in;
+}
+.feature-time {
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
 }
 /*----------------------------
    footer styles
@@ -174,7 +230,8 @@ small {
     padding-left: 15px;
   }
   .header-title,
-  .highlight-title {
+  .highlight-title,
+  .feature-title {
     font-size: 22px;
   }
   .watch-button {
@@ -188,11 +245,13 @@ small {
     width: 100%;
   }
   .players,
-  .highlights {
+  .highlights,
+  .features {
     grid-template-columns: repeat(1, 1fr);
   }
   .player,
-  .match-highlights {
+  .match-highlights,
+  .feature {
     flex-direction: column;
   }
   .match-highlights {
@@ -206,6 +265,9 @@ small {
   .highlight-banner img {
     width: 328px;
     height: 248px;
+  }
+  .feature {
+    margin-left: 15px;
   }
   .footer-logo img {
     width: 150px;
@@ -229,10 +291,11 @@ small {
     width: 100%;
   }
   .players,
-  .highlights {
+  .features {
     grid-template-columns: repeat(2, 1fr);
   }
-  .player {
+  .player,
+  .feature {
     flex-direction: column;
   }
   .highlights {
