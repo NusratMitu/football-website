@@ -12,7 +12,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 153px;
+  padding-top: 80px;
   padding-bottom: 86px;
   margin-bottom: 70px;
 }
@@ -72,7 +72,7 @@ main {
   grid-gap: 27px 30px;
 }
 .player {
-  width: 330px;
+  width: 300px;
   height: 474px;
   padding: 15px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -80,9 +80,6 @@ main {
 .player-banner img {
   width: 100%;
   height: 256px;
-}
-.player-details {
-  padding: 16px 0px;
 }
 .player-title {
   color: #18191f;
@@ -164,4 +161,103 @@ main {
 }
 small {
   font-size: 18px;
+}
+
+/* ------------------
+    media queries
+ ---------------------- */
+@media only screen and (max-width: 668px) {
+  .header {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  .header-title,
+  .highlight-title {
+    font-size: 22px;
+  }
+  .watch-button {
+    margin-bottom: 50px;
+  }
+  .header-banner img {
+    width: 327px;
+    height: 259.17px;
+  }
+  .container {
+    width: 100%;
+  }
+  .players,
+  .highlights {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .match-highlights {
+    flex-direction: column;
+  }
+  .match-highlights {
+    padding: 30px 15px;
+    margin: 0%;
+  }
+  .about-highlight {
+    width: 329px;
+    margin-right: 0%;
+  }
+  .highlight-banner img {
+    width: 328px;
+    height: 248px;
+  }
+  .footer-logo img {
+    width: 150px;
+    height: 63px;
+  }
+  .logo-title {
+    font-size: 32px;
+  }
+}
+/* tab devices */
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+  .header {
+    display: flex;
+    padding-left: 15px;
+  }
+  .header-banner img {
+    width: 327px;
+    height: 259.17px;
+  }
+  .container {
+    width: 100%;
+  }
+  .players,
+  .highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .highlights {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .match-highlights {
+    margin: 30px 15px;
+  }
+  .about-highlight {
+    width: 50%;
+    margin-right: 0%;
+    padding: 0px 20px;
+  }
+  .highlight-title {
+    font-size: 18px;
+  }
+  .highlight-banner {
+    margin-right: 0%;
+    width: 50%;
+  }
+  .highlight-banner img {
+    width: 80%;
+    height: 80%;
+  }
+  .footer {
+    width: 100%;
+  }
 }
