@@ -1,5 +1,6 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
 /*----------------
     header styles
@@ -9,7 +10,7 @@ header {
 }
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding-top: 153px;
   padding-bottom: 86px;
@@ -18,7 +19,7 @@ header {
 .header-title {
   /* font-family: "Poppins", sans-serif; */
   color: #ffffff;
-  font-size: 32px;
+  font-size: 36px;
 }
 .watch-button {
   display: flex;
@@ -34,6 +35,9 @@ header {
   color: #ffffff;
   /* font-size: 16px; */
   padding-right: 8px;
+}
+.fa-arrow-right {
+  color: #ffffff;
 }
 header:hover .watch-button {
   transform: rotateY(360deg);
@@ -91,4 +95,74 @@ main {
   font-size: 16px;
   margin: 0%;
   padding: 10px 0px 2px;
+}
+/*--------------------------------------
+   Highlights of Copa America 2021 styles 
+ ---------------------------------------*/
+.match-highlights {
+  display: flex;
+  align-items: center;
+  margin-top: 165px;
+  margin-bottom: 158px;
+}
+.about-highlight {
+  display: flex;
+  flex-direction: column;
+  width: 469px;
+  margin-right: 66px;
+}
+.highlight-title {
+  font-size: 32px;
+}
+.highlight-title h1 {
+  margin: 0%;
+}
+.highlight-detail {
+  font-size: 16px;
+  color: #6c6c6c;
+}
+.highlight-banner img {
+  width: 567px;
+  height: 427px;
+}
+/*----------------------------
+   footer styles
+ -----------------------------*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 63px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+.footer-logo img {
+  padding-right: 80px;
+}
+.logo-title {
+  font-family: "Niconne", cursive;
+  color: #10437a;
+  font-size: 74px;
+  margin: 0%;
+  transform: translate(-80px, 0px);
+}
+.social-icons {
+  /* display: flex;
+  justify-content: center; */
+  padding: 20px 0px;
+}
+.icon {
+  color: #969bab;
+  background-color: #e1dddc;
+  padding: 7px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.social-icons i:hover {
+  opacity: 0.5;
+}
+small {
+  font-size: 18px;
 }
