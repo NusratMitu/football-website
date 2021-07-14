@@ -267,7 +267,7 @@ small {
     height: 248px;
   }
   .feature {
-    margin-left: 15px;
+    margin: 15px 0px;
   }
   .footer-logo img {
     width: 150px;
